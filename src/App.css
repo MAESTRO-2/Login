@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.40) , rgba(0,0,0,0.40)) , url('https://th.bing.com/th/id/R.2c7c8c3bb1eea53b37759c232c6a0ff0?rik=6AhWB8CXbqyA6Q&riu=http%3a%2f%2fdownloadwallpaper.org%2fwp-content%2fuploads%2f2016%2f02%2fModern-Wallpaper-HD-1920x1080-5.jpg&ehk=iuWMgBTb798zcqm3djLUBwvSXlCGRMR0jIOnhPdr5fM%3d&risl=&pid=ImgRaw&r=0') ;;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    
+}
+
+.auth-form-container, .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    
   }
+  
+ 
+    .auth-form-container {
+      max-width: 300px;
+      max-height: 350px;
+      padding: 5rem;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: 0.5rem;
+      position: absolute;
+     margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+      
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  
+  label {
+    text-align: left;
+    padding: 0.25rem 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
   }
-}
+  
+  button {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #7439db;
+  }
+  
+  .link-btn {
+    background: none;
+    color: white;
+    text-decoration: underline;
+  }
